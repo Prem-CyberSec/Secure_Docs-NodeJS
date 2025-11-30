@@ -32,13 +32,13 @@ SecureDocs is a secure internal document management system designed to protect s
 ```npm install```
 
 3. Create a `.env` file in the root directory with the following variables:
-PORT=3000
+`PORT=3000
 JWT_SECRET=your_jwt_secret
 JWT_ACCESS_EXPIRY=900 # Access token expiry in seconds (e.g., 900 = 15 minutes)
 JWT_REFRESH_SECRET=your_refresh_secret
 JWT_REFRESH_EXPIRY=604800 # Refresh token expiry in seconds (e.g., 604800 = 7 days)
 DATABASE_PATH=./secureDocs.sqlite
-NODE_ENV=development
+NODE_ENV=development`
 
 4. Initialize the database (creates necessary tables and default roles):
 node src/initDb.js
@@ -87,11 +87,3 @@ node src/initDb.js
 - SSL/TLS certificates need configuration for production-grade HTTPS 
 - Correlation IDs for log traceability are planned 
 - Centralized log management and alerting integration is a future enhancement 
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-*Developed as part of a secure software design and implementation project to showcase best practices in web application security.*
