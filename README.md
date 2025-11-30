@@ -25,8 +25,8 @@ SecureDocs is a secure internal document management system designed to protect s
 ## Setup and Installation
 
 1. Clone the repository:
-```git clone <repo-url>
-cd SecureDocs```
+```git clone <repo-url>```
+```cd SecureDocs```
 
 2. Install dependencies:
 ```npm install```
